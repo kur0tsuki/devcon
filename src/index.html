@@ -2,40 +2,27 @@
 <html>
     <head>
         <title>My Portfolio</title>
-        <style>
-            body{background: rgb(2,0,36);background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(255,76,0,1) 100%);}
-            .proj img{height: 50%;width: 50%;}
-            .pic{height: 30%;width: 30%;border-radius: 50%;float: right;margin-right: 10%;}
-            h1{color: #f2f2f2;font-size: 52px;font-family: Tahoma;}
-            h2{color: #f2f2f2;font-size: 35px;font-family: Tahoma;}
-            p{color: #f2f2f2;font-size: 25px;font-family: 'Courier New', Courier, monospace;}
-            li{color: #f2f2f2;font-size: 25px;font-family: 'Courier New', Courier, monospace;}
-            .topnav {width: 100%;overflow: hidden;background: #36454F;margin: 0;padding: 0;top: 0;left: 0; position: fixed;}
-            .topnav a{color: #f2f2f2;font-size: 25px;font-family: 'Courier New', Courier, monospace;float: right;text-align: center;padding: 14px 16px;text-decoration: none;}
-            .topnav a:hover {background-color: #ddd;color: #36454f;}
-            #about{width: 50%;padding-right: 10px;padding-left: 20px;}
-            #arti_pic{height: 20%; width: 20%;}
-        </style>
+        <link rel="stylesheet" href="/style/main.css" type="text/css">
     </head>
     <body>
         <div class="topnav">
-            <a href="#about"><u>About Me</u></a>
-            <a href="#skills"><u>Skills</u></a>
-            <a href="#project"><u>Projects</u></a>
-            <a href="#contact"><u>Contact</u></a>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Projects</a>
+            <a href="#contact">Contact</a>
         </div>
         
-        <center><h1 style="padding-top: 50px;">My Portfolio</h1></center>
+        <center><h1 style="padding-top: 70px;">My Portfolio</h1></center>
         <br>
         <img src="pic.jpg" alt="Avatar" class="pic">
-        <div id="about">
+        <div id="about" class="about_me">
             <h2>About Me</h2>
             <p>My name is <b>Gyan Rhanzell Edwin Baña</b>, currently a Junior at Manuel S. Enverga University Foundation.</p>
             <p>My program is Bachelor of Science in Information Technology specializing in Web and Mobile Development.</p>
             <p>I am an aspiring Back End Developer and may shift to Fullstack in the future</p>
         </div>
         
-        <div id="skills" style="padding-left: 20px;">
+        <div class="skill" id="skills" style="padding-left: 20px; margin-top: 3%;">
             <h2>My Skills</h2>
             <ul>
                 <li>Python</li>
@@ -45,16 +32,16 @@
                 <li>Java</li>
             </ul>
         </div>
-        <div id="project" class="proj" style="padding-left: 20px;">
+        <div id="project" class="proj" style="padding-left: 20px; margin-top: 3%;">
             <h2>Past Projects</h2>
             <p>EasyPet</p>
             <img src="easypet.png">
             <p>Artifair</p>
             <img src="arti_1.png" id="arti_pic">
         </div>
-        <div id="contact" style="padding-left: 20px;">
+        <footer class="footer" id="contact">
             <h2>Contact Me</h2>
             <p>Email: edwinbana.10@gmail.com</p>
-        </div>
+        </footer>
     </body>
 </html>
